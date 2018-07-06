@@ -15,9 +15,95 @@
   <meta name="application-name" content="@keyframers">
   <meta name="msapplication-TileColor" content="#2b2e31">
   <meta name="theme-color" content="#2b2e31">
+
+  <style>
+    html {
+      background: #2B2E31;
+      color: #FFF;
+      height: 100%;
+      display: flex;
+      text-align: center;
+      font-family: monospace;
+    }
+
+    body {
+      margin: auto;
+      overflow: hidden;
+    }
+
+    a {
+      color: #FFF;
+      text-decoration: none;
+      padding: 0.25em 1em;
+
+
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .kf_faces {
+      display: block;
+      max-width: 80%;
+      margin: 1em auto;
+    }
+  </style>
 </head>
 
 <body>
+
+  <svg class="kf_faces" xmlns="http://www.w3.org/2000/svg" width="120" viewBox="0 0 575 356">
+
+    <path fill="#bf3c26" d="M323.5 177.8L172 19.6 20.4 177.8 172 336l151.5-158.2z" />
+    <clipPath id="a">
+      <path d="M323.5 177.8L172 19.6 20.4 177.8 172 336l151.5-158.2z" />
+    </clipPath>
+    <g clip-path="url(#a)">
+      <circle cx="173" cy="135.9" r="100" fill="#f7bb9a" />
+      <path fill="#bf3c26" d="M.1-29h343.7v152.7H.1z" />
+      <circle cx="203.4" cy="176.9" r="14" />
+      <circle cx="140.5" cy="176.9" r="14" />
+      <path fill="#fff" fill-opacity=".1" d="M293 177.8L173 52.6V303l120-125.2z" />
+    </g>
+    <path fill="none" stroke="#000" stroke-width="21.6" d="M323.5 177.8L172 19.6 20.4 177.8 172 336l151.5-158.2z" />
+
+    <path fill="#e1b39a" d="M555.6 177.8L404 19.6 252.5 177.8 404 336l151.6-158.2z" />
+    <clipPath id="b">
+      <path d="M555.6 177.8L404 19.6 252.5 177.8 404 336l151.6-158.2z" />
+    </clipPath>
+    <g clip-path="url(#b)">
+      <circle cx="404" cy="134.9" r="100" fill="#f7bb9a" />
+      <path fill="#3e3430" d="M230.5-29h343.7v152.7H230.5z" />
+      <ellipse cx="433.8" cy="176.9" rx="14" ry="14" />
+      <ellipse cx="370.9" cy="176.9" rx="14" ry="14" />
+      <path fill="#fff" fill-opacity=".1" d="M524 177.8L404 52.6V303l120-125.2z" />
+    </g>
+    <path fill="none" stroke="#000" stroke-width="21.6" d="M555.6 177.8L404 19.6 252.5 177.8 404 336l151.6-158.2z" />
+  </svg>
+
+  <a href="https://twitter.com/keyframers">Twitter</a>
+  <a href="https://twitch.tv/keyframers">Twitch</a>
+  <a href="https://youtube.com/keyframers">YouTube</a>
+  <a href="https://patreon.com/keyframers">Patreon</a>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-6412794-6', 'auto');
+    ga('send', 'pageview');
+    ga('send', 'event', 'keyframers');
+  </script>
 
 </body>
 
