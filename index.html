@@ -31,12 +31,14 @@
       overflow: hidden;
     }
 
+    p {
+      margin: 1.5em 0;
+    }
+
     a {
       color: #FFF;
       text-decoration: none;
       padding: 0.25em 1em;
-
-
     }
 
     a:hover,
@@ -48,6 +50,21 @@
       display: block;
       max-width: 80%;
       margin: 1em auto;
+    }
+
+    .button {
+      display: inline-block;
+      padding: .5em 1em;
+      color: #2B2E31;
+      background: #FFD950;
+      position: relative;
+      z-index: 2;
+    }
+
+    .button:hover,
+    .button:focus {
+      outline: solid 2px #FFF;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -83,10 +100,16 @@
     <path fill="none" stroke="#000" stroke-width="21.6" d="M555.6 177.8L404 19.6 252.5 177.8 404 336l151.6-158.2z" />
   </svg>
 
-  <a href="https://twitter.com/keyframers">Twitter</a>
-  <a href="https://twitch.tv/keyframers">Twitch</a>
-  <a href="https://youtube.com/keyframers">YouTube</a>
-  <a href="https://patreon.com/keyframers">Patreon</a>
+  <p>
+    <a href="https://twitter.com/keyframers">Twitter</a>
+    <a href="https://twitch.tv/keyframers">Twitch</a>
+    <a href="https://youtube.com/keyframers">YouTube</a>
+    <a href="https://patreon.com/keyframers">Patreon</a>
+  </p>
+
+  <p>
+    <a href="https://docs.google.com/forms/d/1UIxJkc-Nu7Ws48E8t2CUvV36_O7VgLAAU1UFNfJw-LU/" target="_blank" class="button">Sign up for notifications </a>
+  </p>
 
   <script>
     (function (i, s, o, g, r, a, m) {
