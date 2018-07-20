@@ -3,6 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const passport = require('passport');
+
+// JWT strategy
+require('./auth/jwt');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -22,6 +26,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.get(
+  '/api/secure',
+  passport.authenticate(['jwt'], { session: false }),
+  (req, res) => {
+    res.send('Secure response from ' + JSON.stringify(req.user));
+  }
+);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -37,5 +49,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// authentication
+app.use(passport.initialize());
 
 module.exports = app;
