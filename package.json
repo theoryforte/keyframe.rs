@@ -1,0 +1,19 @@
+{
+  "name": "keyframe.rs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theoryforte/keyframe.rs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theoryforte/keyframe.rs/issues"
+  },
+  "homepage": "https://github.com/theoryforte/keyframe.rs#readme"
+}
