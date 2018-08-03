@@ -7,6 +7,10 @@ const passport = require('passport');
 
 // JWT strategy
 require('./auth/jwt');
+require('./auth/google');
+
+// Database
+require('./db');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -52,5 +56,6 @@ app.use(function(err, req, res, next) {
 
 // authentication
 app.use(passport.initialize());
+app.use(passport.session());
 
 module.exports = app;
