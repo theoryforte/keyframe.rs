@@ -1,0 +1,10 @@
+# Redirects from what the browser requests to what we serve
+/merch             https://keyframers.threadless.com       302
+/store             https://keyframers.threadless.com       302
+/stream            https://twitch.tv/keyframers            302
+/archive           https://youtube.com/keyframers          302
+/episodes          https://youtube.com/keyframers          302
+/watch             https://youtube.com/keyframers          302
+/codepen           https://codepen.io/team/keyframers
+/twitch            https://twitch.tv/keyframers
+/youtube           https://youtube.com/keyframers
